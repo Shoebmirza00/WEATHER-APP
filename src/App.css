@@ -1,38 +1,86 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light blue background for the whole page */
+  background-image: url('wea.jpg'); /* Optional: Background image */ /* Optional: Background image */
+  background-size: cover; /* Cover the whole viewport */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  border: 4px solid #007bff; /* Blue border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Responsive width */
+  max-width: 350px; /* Max width for larger screens */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: border 0.3s; /* Transition for the border */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus {
+  border-color: #007bff; /* Highlight border on focus */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Transition for button background */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff;  /* Blue text for the heading */
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 400px) {
+  .App {
+    width: 95%; /* Adjust width for smaller screens */
   }
 }
